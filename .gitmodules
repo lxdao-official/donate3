@@ -1,0 +1,9 @@
+[submodule "website"]
+	path = website
+	url = git@github.com:lxdao-official/donate3-website-new.git
+[submodule "backend"]
+	path = backend
+	url = git@github.com:lxdao-official/donate3-backend-new.git
+[submodule "sdk"]
+	path = sdk
+	url = git@github.com:lxdao-official/donate3-sdk.git
