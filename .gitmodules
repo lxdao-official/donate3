@@ -7,3 +7,6 @@
 [submodule "sdk"]
 	path = sdk
 	url = git@github.com:lxdao-official/donate3-sdk.git
+[submodule "contract"]
+	path = contract
+	url = git@github.com:lxdao-official/donate3-contract.git
