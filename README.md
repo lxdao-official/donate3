@@ -121,6 +121,11 @@ Donate3 hopes to build a more prosperous web3 world by linking public goods buil
 
 # Step to run Locally
 
+```bash
+# install all git submodule
+git submodule update --init --recursive
+```
+
 Backend:
 
 ```bash
