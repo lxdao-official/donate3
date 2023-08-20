@@ -19,39 +19,16 @@ Donate3 is a public good that offers a simple and convenient multi-chain donatio
 
 # Bounty Detail
 
-## Boutnty Goal
+## Boutnty Goal-EAS
 
-**Make a Dapp That Slaps, No Cap**
+We use eas to generate donation certificates, which are used to distinguish and record user donations.
+(now only support sepolia and op-goerli )
 
-## What Consensys Products We Used
+[schema in sepolia](https://sepolia.easscan.org/attestation/view/0xa1f4495c302d5202be7d5a2b23eb625645fb679c14a3b5ecf028a3cdac3c2458)
 
-### Infura
+[schema in op-goerli](https://optimism-goerli-bedrock.easscan.org/schema/view/0x169f0b9c35c7520a5078ed31fda83eed6f9f15ec38299319c201cf8eb3e0712c)
 
-Donate3 is multi-chain donation tool. Our backend need to read donation data from different chains to calculate how much donation the donator donated and how much donation the recipient received. We need to aggregate these data to provide users with a better donation data query experience. **Infura** provides us with an unparalleled experience and a wealth of endpoint choices, including Layer1's eth and polygon mainnet, testnet, and Layer2's linea, optimism, arb almost perfectly covering Donate3's perfection need. At the same time, the **Infura Web3 API** also provides us with a large amount of free quota, which perfectly supports our need to query the contract update every five minutes per chain every day.
-
-Related Code：
-
-- [RPC_MAP iN backend](./backend/src/config/index.ts)
-- [RPC_MAP used when deployed contract](./contract/.env.example)
-
-### Linea
-
-#### Thing You Want to Know
-
-#### Link to Contract
-
-[Contract Lineascan](https://lineascan.build/address/0x3a42ddc676f6854730151750f3dbd0ebfe3c6cd3)
-
-[Contract Blockscout](https://explorer.linea.build/address/0x3a42DDc676F6854730151750f3dBD0ebFE3c6CD3)
-
-#### Config In hardhat
-
-[hardhat config](./contract/hardhat.config.ts)
-[wallet config](./sdk/src/Donate3/chains/linea.ts)
-
-### Metamask SDK
-
-see in youtube link, mainly connect the wallet
+Quickly try in this [page](http://localhost:3000/demo)! And check in this [page](http://localhost:3000/donateHistory).
 
 # Description
 
@@ -116,6 +93,7 @@ Donate3 hopes to build a more prosperous web3 world by linking public goods buil
 
 4. contract:
 
+- EAS
 - Frame: hardhat
 - RPC: infura
 
