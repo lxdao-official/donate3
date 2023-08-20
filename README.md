@@ -13,8 +13,8 @@ Donate3 is a public good that offers a simple and convenient multi-chain donatio
 | Github                                     | Avatar                                                             | Email                         |
 | ------------------------------------------ | ------------------------------------------------------------------ | ----------------------------- |
 | [0xhardman](https://github.com/0xhardman)  | ![0xhardman](https://avatars.githubusercontent.com/u/47655472?v=4) | 1142783160@qq.com             |
-| [T](https://github.com/tangminjie)         | ![](https://avatars.githubusercontent.com/u/32589107?v=4)          | tangminjie130@gmail.com       |
-| [stephenhe](https://github.com/hefansuper) | ![](https://avatars.githubusercontent.com/u/66615553?v=4)          | programmerstephenhe@gmail.com |
+| [T](https://github.com/tangminjie)         | ![](https://avatars.githubusercontent.com/u/66615553?v=4)          | tangminjie130@gmail.com       |
+| [stephenhe](https://github.com/hefansuper) | ![](https://avatars.githubusercontent.com/u/32589107?v=4)          | programmerstephenhe@gmail.com |
 | [wwei](https://github.com/wwei-github)     | ![](https://avatars.githubusercontent.com/u/46670626?v=4)          | ww418047394@gmail.com         |
 
 # Bounty Detail
@@ -51,7 +51,7 @@ Related Code：
 
 ### Metamask SDK
 
-youtube link
+see in youtube link, mainly connect the wallet
 
 # Description
 
