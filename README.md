@@ -10,12 +10,12 @@ Donate3 is a public good that offers a simple and convenient multi-chain donatio
 
 # Teams
 
-| Github                                     | Avatar                                                             | Email |
-| ------------------------------------------ | ------------------------------------------------------------------ | ----- |
-| [0xhardman](https://github.com/0xhardman)  | ![0xhardman](https://avatars.githubusercontent.com/u/47655472?v=4) |       |
-| [T](https://github.com/tangminjie)         | ![](https://avatars.githubusercontent.com/u/32589107?v=4)          |       |
-| [stephenhe](https://github.com/hefansuper) | ![](https://avatars.githubusercontent.com/u/66615553?v=4)          |       |
-| [wwei](https://github.com/wwei-github)     | ![](https://avatars.githubusercontent.com/u/46670626?v=4)          |       |
+| Github                                     | Avatar                                                             | Email                         |
+| ------------------------------------------ | ------------------------------------------------------------------ | ----------------------------- |
+| [0xhardman](https://github.com/0xhardman)  | ![0xhardman](https://avatars.githubusercontent.com/u/47655472?v=4) | 1142783160@qq.com             |
+| [T](https://github.com/tangminjie)         | ![](https://avatars.githubusercontent.com/u/32589107?v=4)          | tangminjie130@gmail.com       |
+| [stephenhe](https://github.com/hefansuper) | ![](https://avatars.githubusercontent.com/u/66615553?v=4)          | programmerstephenhe@gmail.com |
+| [wwei](https://github.com/wwei-github)     | ![](https://avatars.githubusercontent.com/u/46670626?v=4)          | ww418047394@gmail.com         |
 
 # Bounty Detail
 
@@ -31,7 +31,8 @@ Donate3 is multi-chain donation tool. Our backend need to read donation data fro
 
 Related Code：
 
--
+- [RPC_MAP iN backend](./backend/src/config/index.ts)
+- [RPC_MAP used when deployed contract](./contract/.env.example)
 
 ### Linea
 
@@ -45,7 +46,8 @@ Related Code：
 
 #### Config In hardhat
 
-code lint
+[hardhat config](./contract/hardhat.config.ts)
+[wallet config](./sdk/src/Donate3/chains/linea.ts)
 
 ### Metamask SDK
 
@@ -65,25 +67,25 @@ However, our web3 world does not have a government or public organization to mai
 
 Nowadays, most donations are done by transferring money directly to an address, but this way of donating faces the following problems. For example:
 
-1). Not secure enough. The wallet of the project side is often a secure wallet, with different addresses on different chains, or only supports a specific few chains, so it is easy for donors to choose the wrong network, and users also need to carry out complex cross-chain operations to ensure that the donation is delivered.
+1. Not secure enough. The wallet of the project side is often a secure wallet, with different addresses on different chains, or only supports a specific few chains, so it is easy for donors to choose the wrong network, and users also need to carry out complex cross-chain operations to ensure that the donation is delivered.
 
-2). Not convenient enough. Donor recipients need to put a lot of effort into designing donation components or pages.
+2. Not convenient enough. Donor recipients need to put a lot of effort into designing donation components or pages.
 
-3). Lack of interaction and proof. In a regular donation, only one transfer record is generated on the chain, and it is difficult for outsiders to distinguish from the thousands of transactions that the transaction is actually a donation, expressing someone's recognition of some public good.
+3. Lack of interaction and proof. In a regular donation, only one transfer record is generated on the chain, and it is difficult for outsiders to distinguish from the thousands of transactions that the transaction is actually a donation, expressing someone's recognition of some public good.
 
-4). High cost. A typical donation product in web2, buymeacoffee, usually costs around 5$ for a single donation, but a donation of around 2$ in gas is made on layer1.
+4. High cost. A typical donation product in web2, buymeacoffee, usually costs around 5$ for a single donation, but a donation of around 2$ in gas is made on layer1.
 
 ## Our Solution
 
 Donate3 solves the above problems with the following Features:
 
-1). Accept multi-chain donations. In the product, we differentiate between two types of addresses to accept donations: EOA and Safe Account, if the user chooses EOA, it means that the recipient's address is the same in different chains, and the donor can donate to the same chain in different chains. If users choose Safe Account, it means that the donor's address is different in different chains. Users can configure different addresses. This ensures that donations are safely deposited into the account.
+1. Accept multi-chain donations. In the product, we differentiate between two types of addresses to accept donations: EOA and Safe Account, if the user chooses EOA, it means that the recipient's address is the same in different chains, and the donor can donate to the same chain in different chains. If users choose Safe Account, it means that the donor's address is different in different chains. Users can configure different addresses. This ensures that donations are safely deposited into the account.
 
-2). Simple Configuration. Donate3 provides a perfect and simple configuration page, which takes only 5 min for donors to customize the donation components and pages in an aesthetically pleasing and easy-to-access way. Donate components can be quickly integrated into front-end projects. The donation page can provide an informative page for donors to know more about the recipients and thus be more willing to donate.
+2. Simple Configuration. Donate3 provides a perfect and simple configuration page, which takes only 5 min for donors to customize the donation components and pages in an aesthetically pleasing and easy-to-access way. Donate components can be quickly integrated into front-end projects. The donation page can provide an informative page for donors to know more about the recipients and thus be more willing to donate.
 
-3). EAS-based attestation of donation. We designed a Donate schema, users donate through Donate3, our smart contract will create an EAS certificate for the donor at the same time, recording the donor's address, donation currency, amount and other information. This is a certificate of honor for the donor and a basis for the recipient to express their gratitude.
+3. EAS-based Attestation With Data Statistics. We designed a Donate schema, users donate through Donate3, our smart contract will create an EAS([Ethereum Attestation Service](https://attest.sh/)) certificate for the donor at the same time, recording the donor's address, donation currency, amount and other information. This is a certificate of honor for the donor and a basis for the recipient to express their gratitude. Donate3 also keeps statistics on donations based on EAS and events, so that giving and receiving can be seen at a glance.
 
-4). Encourage donations on Layer2 to solve the cost. Donate3's contract is also deployed on Linea Network to encourage users to use Linea to save cost.
+4. Low cost & Easy Use. Donate3's contract is also deployed on Linea Network to encourage users to use Linea to save cost. At the same time Donate3 integrates Metamask SDK to make donation behavior unhindered.
 
 Donate3 hopes to build a more prosperous web3 world by linking public goods builders and users in the web3 world through the simple act of donation.
 
@@ -98,15 +100,15 @@ Donate3 hopes to build a more prosperous web3 world by linking public goods buil
 
 1. Website
 
-- frame: nextjs
-- wallet interact: wagmi
-- wallet connect: metamask sdk
+- Frame: nextjs
+- Wallet Interact: wagmi
+- Wallet connect: metamask sdk
 - UI coponent:mui
 - User config data storage: img3, IPFS
 
 2. Backend:
 
-- frame: nestjs
+- Frame: nestjs
 - ORM: prisma
 - Web3 API:Infura
 
@@ -114,11 +116,67 @@ Donate3 hopes to build a more prosperous web3 world by linking public goods buil
 
 4. contract:
 
-- frame: hardhat
-- rpc: infura
+- Frame: hardhat
+- RPC: infura
 
 # Step to run Locally
 
+Backend:
+
+```bash
+cd ./backend
+cp .env.example .env
+
+# fill DATABASE_URL=postgresql://xxxx@localhost:5432/donate3
+# fill INFURA_APIKEY=***************************
+
+yarn install
+yarn prisma
+yarn start:dev
+# wait 5 minutes to async data
+```
+
+Website:
+
+```bash
+cd ../
+cd ./website
+cp .env.example .env
+
+yarn install
+yarn build
+yarn start
+```
+
+Now you can try all feature of Donate3.
+You can also try run SDK:
+
+```bash
+cd ../
+cd sdk
+yarn install
+yarn run dev
+```
+
+If you want to deploy your own contract:
+
+```bash
+cd ../
+cd caontract
+
+cp .env.example .env
+# fill the api key and scan key
+yarn install
+
+npx hardhat run scripts/deploy.ts --network {YOUR_NETWORK}
+npx hardhat verify {DEPLOYED_ADDRESS} --network {YOUR_NETWORK} ETH
+
+```
+
 # Demo Link
 
+https://www.donate3.xyz/
+
 # 3-minute Pitch Video
+
+https://youtu.be/dCRKt1hYGWs
