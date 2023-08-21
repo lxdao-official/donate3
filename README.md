@@ -91,6 +91,10 @@ Donate3 hopes to build a more prosperous web3 world by linking public goods buil
 
 # Future Plans
 
+In the long run, Donate3 is an on-chain tool with very high composability. In the future, we hope to build a perfect platform for displaying and retrieving information about public goods, so that more excellent public goods can be discovered and funded. At the same time, we are also considering to ensure that the project breaks even by setting fees or advertisements.
+
+In recently we consider:
+
 1. Update Contract: Support Donation of ERC20 token.
 2. Marketing Promotion: Find real users to use our products to create a Donate3 ecosystem.
 3. EIP Standard Application. Donate3 is a opensource project, and we hope to formulate donation standards to help the prosperous ecology of public goods.
