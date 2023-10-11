@@ -1,11 +1,11 @@
 [submodule "donate3-sdk"]
 	path = donate3-sdk
 	url = https://github.com/lxdao-official/donate3-sdk/
-	branch = solana
+	# branch = solana
 [submodule "donate3-website-new"]
 	path = donate3-website-new
 	url = https://github.com/lxdao-official/donate3-website-new
-	branch = solana
+	# branch = solana
 [submodule "donate3-contract-solana"]
 	path = donate3-contract-solana
 	url = https://github.com/lxdao-official/donate3-contract-solana
