@@ -1,4 +1,4 @@
-# Step to run Locally in Donate3-Solana
+# Step to run locally in Donate3-Solana
 
 ```bash
 # install all git submodule
