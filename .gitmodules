@@ -6,3 +6,6 @@
 	path = donate3-website-new
 	url = https://github.com/lxdao-official/donate3-website-new
 	branch = solana
+[submodule "donate3-contract-solana"]
+	path = donate3-contract-solana
+	url = https://github.com/lxdao-official/donate3-contract-solana
