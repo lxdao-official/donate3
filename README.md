@@ -9,7 +9,7 @@ donate3-website-new:
 
 ```bash
 cd ../
-cd ./website
+cd donate3-website-new
 cp .env.example .env
 
 yarn install
@@ -22,7 +22,7 @@ You can also try run SDK:
 
 ```bash
 cd ../
-cd sdk
+cd donate3-sdk
 yarn install
 yarn run dev
 ```
@@ -31,7 +31,7 @@ yarn run dev
 
 ```bash
 cd ../
-cd caontract
+cd donate3-contract-solana
 
 cp .env.example .env
 # fill the api key and scan key

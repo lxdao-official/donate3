@@ -5,3 +5,4 @@
 [submodule "donate3-website-new"]
 	path = donate3-website-new
 	url = https://github.com/lxdao-official/donate3-website-new
+	branch = solana
