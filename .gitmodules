@@ -1,12 +1,7 @@
-[submodule "website"]
-	path = website
-	url = git@github.com:lxdao-official/donate3-website-new.git
-[submodule "backend"]
-	path = backend
-	url = git@github.com:lxdao-official/donate3-backend-new.git
-[submodule "sdk"]
-	path = sdk
-	url = git@github.com:lxdao-official/donate3-sdk.git
-[submodule "contract"]
-	path = contract
-	url = git@github.com:lxdao-official/donate3-contract.git
+[submodule "donate3-sdk"]
+	path = donate3-sdk
+	url = https://github.com/lxdao-official/donate3-sdk/
+	branch = solana
+[submodule "donate3-website-new"]
+	path = donate3-website-new
+	url = https://github.com/lxdao-official/donate3-website-new
